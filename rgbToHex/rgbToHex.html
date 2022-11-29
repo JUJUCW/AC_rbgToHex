@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./rgbToHex.css" />
+
+        <title>RGB To Hex</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="rgb">
+                <div class="rgb-row">
+                    <div class="rgb-col row-red" >R</div>
+                    <div>
+                        <input type="range"id="red" min="0" max="255" step="1" value="0" />
+                    </div>
+                    <div class="label-red ">
+                        <label for="red" id="label-red">0</label>
+                    </div>
+                </div>
+
+                <div class="rgb-row">
+                    <div class="rgb-col row-green">G</div>
+                    <div>
+                        <input type="range" id="green" min="0" max="255" step="1" value="164" />
+                    </div>
+                    <div class="label-green">
+                        <label for="green" id="label-green">164</label>
+                    </div>
+                </div>
+
+                <div class="rgb-row">
+                    <div class="rgb-col row-blue">B</div>
+                    <div>
+                        <input type="range" id="blue" min="0" max="255" step="1" value="180" />
+                    </div>
+                    <div class="label-blue">
+                        <label for="blue" id="label-blue">180</label>
+                    </div>
+                </div>
+                <div class="rgb-row">
+                    <div id="hexColor">#00a4b4</div>
+                </div>
+            </div>
+        </div>
+       
+        <script src="./rgbToHex.js"></script>
+    </body>
+</html>

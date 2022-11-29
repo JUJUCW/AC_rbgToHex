@@ -17,7 +17,7 @@ function rgbToHex() {
 }
 
 // 背景顏色跟著改變
-function bgColor() {
+function switchBgColor() {
     return (document.body.style.backgroundColor = hexCode.innerText);
 }
 
@@ -27,24 +27,24 @@ function red(e) {
     let color = e.target.value;
     red.innerHTML = color;
     rgbToHex();
-    bgColor();
+    switchBgColor();
 }
 function green(e) {
     let green = document.querySelector('#label-green');
     let color = e.target.value;
     green.innerHTML = color;
     rgbToHex();
-    bgColor();
+    switchBgColor();
 }
 function blue(e) {
     let blue = document.querySelector('#label-blue');
     let color = e.target.value;
     blue.innerHTML = color;
     rgbToHex();
-    bgColor();
+    switchBgColor();
 }
 
-bgColor();
+switchBgColor();
 
 // 監聽滑鼠移動
 redChange.addEventListener('mousemove', red);

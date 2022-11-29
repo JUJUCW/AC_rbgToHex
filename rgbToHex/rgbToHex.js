@@ -6,6 +6,7 @@ const hexCode = document.querySelector('#hexColor');
 
 function rgbToHex() {
     // 將十進位轉換成十六進位
+    //
     let redValue = Number(redChange.value).toString(16);
     let greenValue = Number(greenChange.value).toString(16);
     let blueValue = Number(blueChange.value).toString(16);

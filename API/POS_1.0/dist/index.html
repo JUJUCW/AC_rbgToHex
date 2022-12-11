@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>POS 機 1.0</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" />
+    </head>
+    <body>
+        <!-- partial:index.partial.html -->
+        <div class="container mt-3 p-3 bg-info">
+            <h2 class="text-info d-flex text-light justify-content-center p-3">
+              AC cafe 點餐機</h2>
+            <!-- 菜單區塊 -->
+            <div id="menu" class="row ">
+                <!--  第 1 個卡片  -->
+
+                <!--  第 2 個卡片  -->
+
+                <!--  第 3 個卡片  -->
+
+                <!--  第 4 個卡片  -->
+            </div>
+            <!-- 購物車清單 -->
+            <h4 class="my-3 text-light">購物車清單</h4>
+            <div class="col-6">
+                <ul id="cart" class="list-group">
+                    <!-- <li class="list-group-item">馬卡龍 X 1 小計：90</li><li class="list-group-item">草莓 X 2 小計：120</li> -->
+                </ul>
+            </div>
+            <h5 class="my-3 text-light">總金額：
+              <span id="total-amount">--</span>
+            </h5>
+            <button id="submit-button" type="button" class="btn btn-outline-info bg-light">送出訂單</button>
+        </div>
+        <!-- partial -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
